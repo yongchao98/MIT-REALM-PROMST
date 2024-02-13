@@ -123,7 +123,7 @@
               </span>
               <!-- Website Link. -->
               <span class="link-block">
-                <a href="https://yongchao98.github.io/MIT-REALM-Multi-Robot/"
+                <a href="https://yongchao98.github.io/MIT-REALM-PROMST/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-link"></i>
@@ -133,7 +133,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/yongchao98/multi-agent-framework"
+                <a href="https://github.com/yongchao98/PROMST"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -158,7 +158,7 @@
         alt=""/>
       <h2 class="subtitle has-text-centered" style="color: red;">
         <br/>
-        We compare the task success rate and token efficiency of four multi-agent communication frameworks (centralized, decentralized, and two hybrid) and three step history methods (with all history, without history, and with state-action pairs) as applied to four coordination-dependent multi-agent 2D task scenarios for increasing numbers of agents.
+        We introduce an automatic prompt optimization framework for complex, multi-step agent tasks: PROMST. To handle the issues of task complexity, judging long-horizon correctness of individual actions, high prompt exploration cost, and human preference alignment, we propose the integration of human feedback, a learned score prediction model, and the modification of task score functions. Our approach generally outperforms representative baselines on eight different task environments. We show that learning a score prediction model improves the overall performance. Finally, we argue that modifying score functions can help align to optimized prompts to user preferences.
         </h2>     
     </div>
   </div>
@@ -184,10 +184,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified abstract-content">
           <p>
-           A flurry of recent work has demonstrated that pre-trained large language models (LLMs) can be effective task planners for a variety of single-robot tasks. The planning performance of LLMs is significantly improved via prompting techniques, such as in-context learning or re-prompting with state feedback, placing new importance on the token budget for the context window. An under-explored but natural next direction is to investigate LLMs as multi-robot task planners. However, long-horizon, heterogeneous multi-robot planning introduces new challenges of coordination while also pushing up against the limits of context window length. It is therefore critical to find token-efficient LLM planning frameworks that are also able to reason about the complexities of multi-robot coordination.
+           Prompt optimization aims to find the best prompt to a large language model (LLM) for a given task. LLMs have been successfully used to help find and improve prompt candidates for single-step tasks. However, realistic tasks for agents are multi-step and introduce new challenges: (1) Prompt content is likely to be more extensive and complex, making it more difficult for LLMs to analyze errors, (2) the impact of an individual step is difficult to evaluate, and (3) different people may have varied preferences about task execution. While humans struggle to optimize prompts, they are good at providing feedback about LLM outputs; we therefore introduce a new LLM-driven discrete prompt optimization framework that incorporates human-designed feedback rules about potential errors to automatically offer direct suggestions for improvement. 
           </p>
           <p>
-           In this work, we compare the task success rate and token efficiency of four multi-agent communication frameworks (centralized, decentralized, and two hybrid) as applied to four coordination-dependent multi-agent 2D task scenarios for increasing numbers of agents. We find that a hybrid framework achieves better task success rates across all four tasks and scales better to more agents. We further demonstrate the hybrid frameworks in 3D simulations where the vision-to-text problem and dynamical errors are considered.
+           Our framework is stylized as a genetic algorithm in which an LLM generates new candidate prompts from a parent prompt and its associated feedback; we use a learned heuristic function that predicts prompt performance to efficiently sample from these candidates. This approach significantly outperforms both human-engineered prompts and several other prompt optimization methods across eight representative multi-step tasks (an average 27.7% and 28.2% improvement to current best methods on GPT-3.5 and GPT-4, respectively). We further show that the score function for tasks can be modified to better align with individual preferences. We believe our work can serve as a benchmark for automatic prompt optimization for LLM-driven multi-step tasks.
           </p>
         </div>
       </div>
