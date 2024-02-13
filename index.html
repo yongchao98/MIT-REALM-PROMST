@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?">
+  <meta name="keywords" content="natural language processing, human-robot interaction, task and motion planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  
+  <style>
+    .simulation-image {
+      height: 340px;
+      width: 500px;
+    }
+  </style>
+  
+  <style>
+    .table-image {
+      height: 260px;
+      width: 500px;
+    }
+  </style>
+  
+  <style>
+    .abstract-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://realm.mit.edu">
+            REALM Website
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yongchao98.github.io/YongchaoChen/">Yongchao Chen</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=US8n_rwAAAAJ&hl=en">Jacob Arkin</a>,</span>
+            <span class="author-block">
+              <a href="https://mitibmwatsonailab.mit.edu/people/yang-zhang/">Yang Zhang</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://aeroastro.mit.edu/people/nicholas-roy/">Nicholas Roy</a>,
+            </span>
+            <span class="author-block">
+              <a href="http://chuchu.mit.edu">Chuchu Fan</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Massachusetts Institute of Technology</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2309.15943.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Website Link. -->
+              <span class="link-block">
+                <a href="https://yongchao98.github.io/MIT-REALM-Multi-Robot/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-link"></i>
+                  </span>
+                  <span>Website</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/yongchao98/multi-agent-framework"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code and Dataset</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/Website1.png"
+        class="center-image"
+        alt=""/>
+      <h2 class="subtitle has-text-centered" style="color: red;">
+        <br/>
+        We compare the task success rate and token efficiency of four multi-agent communication frameworks (centralized, decentralized, and two hybrid) and three step history methods (with all history, without history, and with state-action pairs) as applied to four coordination-dependent multi-agent 2D task scenarios for increasing numbers of agents.
+        </h2>     
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <video controls class="center-video" width="100%">
+          <source src="./static/images/Multi-agent_Video_medium.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified abstract-content">
+          <p>
+           A flurry of recent work has demonstrated that pre-trained large language models (LLMs) can be effective task planners for a variety of single-robot tasks. The planning performance of LLMs is significantly improved via prompting techniques, such as in-context learning or re-prompting with state feedback, placing new importance on the token budget for the context window. An under-explored but natural next direction is to investigate LLMs as multi-robot task planners. However, long-horizon, heterogeneous multi-robot planning introduces new challenges of coordination while also pushing up against the limits of context window length. It is therefore critical to find token-efficient LLM planning frameworks that are also able to reason about the complexities of multi-robot coordination.
+          </p>
+          <p>
+           In this work, we compare the task success rate and token efficiency of four multi-agent communication frameworks (centralized, decentralized, and two hybrid) as applied to four coordination-dependent multi-agent 2D task scenarios for increasing numbers of agents. We find that a hybrid framework achieves better task success rates across all four tasks and scales better to more agents. We further demonstrate the hybrid frameworks in 3D simulations where the vision-to-text problem and dynamical errors are considered.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="Table1">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/table1.png"
+        class="center-image"
+        alt=""/> 
+    </div>
+  </div>
+</section>
+
+<section class="Full prompt part1">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/Prompt1.png"
+        class="center-image"
+        alt=""/> 
+        <h2 class="subtitle has-text-centered" style="color: red;">
+        <br/>
+        Prompt and process examples of the HMAS-2 framework in BoxLift2 task. The generated 'Response from the central agent' is sent to local agents for feedback. Once the central-local iteration terminates, the output plan is checked for syntactic correctness.
+        </h2>     
+    </div>
+  </div>
+</section>
+
+<section class="Full prompt part2">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/Prompt2.png"
+        class="center-image"
+        alt=""/> 
+        <h2 class="subtitle has-text-centered" style="color: red;">
+        <br/>
+        Prompt example of the local agent of the HMAS-2 framework in BoxLift2 task. The generated plan from the central agent is sent to local agents for feedback.
+        </h2>     
+    </div>
+  </div>
+</section>
+  
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Related Links</h2>
+    <div class="content has-text-justified">
+      <p>
+        This work is part of a broader research thread around <emph>language-instructed task and motion planning</emph>, which allows us to transform from natural language instruction into robot control signals.
+      </p>
+      <p>
+        Other work on natural language to STL translation and LLM-based agents from our lab include:
+        <ul>
+          <li><a href="https://arxiv.org/pdf/2305.07766.pdf">NL2TL: Transforming Natural Languages to Temporal Logics using Large Language Models</a>.</li>
+          <li><a href="https://arxiv.org/pdf/2306.06531.pdf">AutoTAMP: Autoregressive Task and Motion Planning with LLMs as Translators and Checkers</a>.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2023scalable,
+  title={Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?},
+  author={Chen, Yongchao and Arkin, Jacob and Zhang, Yang and Roy, Nicholas and Fan, Chuchu},
+  journal={arXiv preprint arXiv:2309.15943},
+  year={2023}
+}
+}</code></pre>
+  </div>
+</section>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
